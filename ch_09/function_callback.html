@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java script</title>
+        <script>
+            function callTenTimes(call){
+                for(var i = 0; i < 10; i++){
+                    call();
+                }
+            }
+            callTenTimes(function(){ 
+                alert('함수 호출'); 
+                 });
+
+            /*
+            var callback = function(){
+                alert('함수 호출');
+            }
+            callTenTimes(callback);
+            */
+           /*
+           var cb = function(){
+               alert('cb 함수 호출');
+           }
+           var back = function(){
+               alert('back 함수 호출');
+           }
+           callTenTimes(cb);
+           callTenTimes(back);
+           */
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
